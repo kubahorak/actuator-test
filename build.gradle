@@ -29,7 +29,7 @@ dependencies {
 }
 
 processResources {
-    filesMatching('**/*.properties') {
+    filesMatching('**/*.yml') {
                        expand(project.properties)
     }
 }
