@@ -28,8 +28,8 @@ dependencies {
     // end::actuator[]
 }
 
-version = '1.0.0'
-
 processResources {
-    expand project.properties
+    filesMatching('**/*.properties') {
+                       expand(project.properties)
+    }
 }
